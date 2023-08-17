@@ -12,7 +12,6 @@
         app:srcCompat="@drawable/guni_pink_logo"/>
 
    <com.google.android.material.card.MaterialCardView
-       android:elevation="30dp"
        app:cardCornerRadius="10dp"
        android:layout_marginHorizontal="20dp"
        android:layout_width="match_parent"
@@ -119,13 +118,38 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:elevation="50dp">
+        android:layout_gravity="center"
+        android:layout_marginTop="-20dp"
+        android:elevation="20dp">
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="150dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="-15dp"
-            android:text="Register"/>
+            android:text="Register"
+            android:id="@+id/Register">
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Do you have an account?">
+        </TextView>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Login"
+            android:background="#00FFFFFF"
+            android:text="Login"
+            android:layout_marginStart="40dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_purple">
+
+        </Button>
+
     </LinearLayout>
 </LinearLayout>
